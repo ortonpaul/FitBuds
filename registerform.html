@@ -5,23 +5,24 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Register</title>
-        <meta name="description" content="This is the registration screen for FitBud.">
+        <meta name="description" content="This is the registration screen for FitBuds.">
         <link rel="stylesheet" href="main.css">
       <script src = "confirm.js"> </script>
-        
     </head>
     <body>
         <div align = "center"> 
-        <h1> FitBud Registration </h1>
+        <br />
+        <br />
+        <br />
+        <h1> FitBuds Registration </h1>
         <h3> Sign up for your free, personal fitness buddy </h3>
-        </div>
     <section class = "registerme"> 
         
         
         <ul>
             <li> <label for = "firstandlastname"> First And Last Name </label>
                 <input type = "firstandlastname" name = "firstandlastname" > </li>
-            
+            <br /> 
            <li> <label for = "birthdate"> Birthday </label>
 <select>
 <option value = "">       </option>
@@ -75,13 +76,10 @@
 </select>
 
                <input type ="year" name="year" placeholder="year"> </li>
-            
+            <br /> 
             <li> <label for = "city"> City </label>
             <input type = "city" name = "city" placeholder = "city" >
-            </li>
-            
-            <li> <label for = "state"> State </label>
-            
+            <label for = "state"> State </label>
             <select>
     <option value="">   </option>
 	<option value="AL">AL</option>
@@ -137,18 +135,23 @@
 	<option value="WY">WY</option>
 </select>		
  </li>
+            <br /> 
             <li> <label for = "usermail"> Email </label>
                 <input type = "email" name = "usermail" placeholder = "yourname@email.com" > </li>
-            
+            <br /> 
+            <div id = "passwordError"></div>
            <li> <label for = "password"> Password </label>
             <input type = "password" placeholder = "password" id="password" > </li>
+            <br /> 
             
             <li> <label for = "confirmpassword"> Confirm Password </label>
             <input type = "password" placeholder = "Confirm Password" id = "confirmPassword" > </li> 
+            <br /> 
             
             <li> <button id="submitPassword">Submit</button> </li> 
             </ul>
          </section>
+        </div>
         
     </body>
 </html>
