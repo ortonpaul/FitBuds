@@ -226,3 +226,8 @@ h4 {
 
     list-style-type: none;
 }
+
+a:active {
+    box-shadow: 0.25px 0.5px #bebebe inset;
+
+}
