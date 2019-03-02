@@ -3,6 +3,10 @@ html {
     font-family: 'ABeeZee', sans-serif;
 }
 
+h2 {
+    text-align: center;
+}
+
 .navbar {
     list-style-type: none;
     margin: 20px;
@@ -43,6 +47,7 @@ html {
 .callout li img {
     width: 50px;
 }
+
 .button {
   font: bold 11px Arial;
   text-decoration: none;
@@ -53,4 +58,13 @@ html {
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
+}
+
+.resources img {
+    height: 250px;
+    padding: 50px;
+}
+
+.resources {
+    text-align: center;
 }
