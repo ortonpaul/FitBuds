@@ -1,0 +1,49 @@
+html {
+    background: #afcdff;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 30px;
+    font-size: 30pt;
+    text-decoration: none;
+}
+
+.navbar li img {
+    width: 150px;
+}
+
+.callout {
+    background-color: white;
+    font-size: 50px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.callout li {
+    list-style-type: none;
+    line-height: 2;
+}
+
+.callout li img {
+    width: 50px;
+}
+
+li {
+list-style-image: url(img/iphone.png);
+}
