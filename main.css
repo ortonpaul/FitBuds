@@ -1,0 +1,228 @@
+html {
+    background: #afcdff;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 70pt;
+    text-align: center;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48pt;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24pt;
+}
+
+h4 {
+    text-align: center;
+    font-size: 14pt;
+    line-height: 0.5;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 40px 0px;
+    padding: 10px 0px 10px 150px ;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 30px;
+    font-size: 20pt;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: lightgray;
+}
+
+.homeIcon {
+    position: absolute;
+    top: 10px;
+    left: 75px;
+    background-color: white;
+    border-radius: 12px;
+    list-style-type: none;
+    padding: 30px;
+}
+
+.homeIcon a img{
+    width: 45px;
+    height: 45px;
+}
+
+.homeIcon:hover {
+    background-color: lightgray;
+}
+
+#selected {
+    background-color: lightgray;
+}
+
+.callout {
+    background-color: white;
+    font-size: 20pt;
+    margin: 20px;
+    padding: 10px;
+}
+
+.callout li {
+    list-style-type: none;
+}
+
+#brain li:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-image: url(brain.png);
+    background-repeat: no-repeat;
+    margin-right: 35px;
+    vertical-align: middle;
+}
+
+#eye li:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-image: url(eye.png);
+    background-repeat: no-repeat;
+    margin-right: 35px;
+    vertical-align: middle;
+}
+
+#heart li:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-image: url(heart.png);
+    background-repeat: no-repeat;
+    margin-right: 35px;
+    vertical-align: middle;
+}
+
+#weight li:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-image: url(weight.png);
+    background-repeat: no-repeat;
+    margin-right: 35px;
+    vertical-align: middle;
+}
+
+#apple li:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-image: url(apple.png);
+    background-repeat: no-repeat;
+    margin-right: 35px;
+    vertical-align: middle;
+}
+
+.callout li img {
+    height: 15px;
+}
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.resources img {
+    height: 125px;
+    padding-bottom: 40px;
+}
+
+.resources {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 50px;
+}
+
+.resources td {
+    width: 33%;
+}
+
+.past {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 50px;
+}
+
+.past td {
+    12.5%
+}
+
+.past img {
+    height: 40px;
+}
+
+#selected {
+    background-color: lightgray;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.callout:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#profile img {
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.registerme li {
+
+    list-style-type: none;
+}
+.logmein li {
+
+    list-style-type: none;
+}
