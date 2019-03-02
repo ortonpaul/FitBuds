@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0404E0FBBB83C8727F9353E8 /* Pods_FitBuds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7230C57B44F72A44E735C5A /* Pods_FitBuds.framework */; };
+		F43F1F64222A7BAF00FBF896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F1F63222A7BAF00FBF896 /* AppDelegate.swift */; };
+		F43F1F66222A7BAF00FBF896 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F1F65222A7BAF00FBF896 /* ViewController.swift */; };
+		F43F1F69222A7BAF00FBF896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43F1F67222A7BAF00FBF896 /* Main.storyboard */; };
+		F43F1F6B222A7BB100FBF896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43F1F6A222A7BB100FBF896 /* Assets.xcassets */; };
+		F43F1F6E222A7BB100FBF896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43F1F6C222A7BB100FBF896 /* LaunchScreen.storyboard */; };
+		F43F1F76222A81DF00FBF896 /* caduceus.png in Resources */ = {isa = PBXBuildFile; fileRef = F43F1F75222A81DF00FBF896 /* caduceus.png */; };
+		F43F1F79222A8A0000FBF896 /* pivot_model_v1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F43F1F78222A8A0000FBF896 /* pivot_model_v1.mlmodel */; };
+		F43F1F7B222ACA9C00FBF896 /* PivotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F1F7A222ACA9C00FBF896 /* PivotViewController.swift */; };
+		F4C1C5C0222B152600C876A3 /* NarrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1C5BF222B152600C876A3 /* NarrowViewController.swift */; };
+		F4C1C5C2222B18B200C876A3 /* narrow_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F4C1C5C1222B18B200C876A3 /* narrow_model.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63C21110BC749E177BD5DA65 /* Pods-FitBuds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBuds.release.xcconfig"; path = "Target Support Files/Pods-FitBuds/Pods-FitBuds.release.xcconfig"; sourceTree = "<group>"; };
+		9DA4F53CC7AA12020C7ADAAC /* Pods-FitBuds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBuds.debug.xcconfig"; path = "Target Support Files/Pods-FitBuds/Pods-FitBuds.debug.xcconfig"; sourceTree = "<group>"; };
+		C7230C57B44F72A44E735C5A /* Pods_FitBuds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBuds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43F1F60222A7BAE00FBF896 /* FitBuds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBuds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43F1F63222A7BAF00FBF896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F43F1F65222A7BAF00FBF896 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F43F1F68222A7BAF00FBF896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F43F1F6A222A7BB100FBF896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F43F1F6D222A7BB100FBF896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F43F1F6F222A7BB100FBF896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F43F1F75222A81DF00FBF896 /* caduceus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caduceus.png; sourceTree = "<group>"; };
+		F43F1F78222A8A0000FBF896 /* pivot_model_v1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = pivot_model_v1.mlmodel; sourceTree = "<group>"; };
+		F43F1F7A222ACA9C00FBF896 /* PivotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PivotViewController.swift; sourceTree = "<group>"; };
+		F4C1C5BF222B152600C876A3 /* NarrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrowViewController.swift; sourceTree = "<group>"; };
+		F4C1C5C1222B18B200C876A3 /* narrow_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = narrow_model.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F43F1F5D222A7BAE00FBF896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0404E0FBBB83C8727F9353E8 /* Pods_FitBuds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29BB9E25A6FE08D8965791BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7230C57B44F72A44E735C5A /* Pods_FitBuds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AED41357A5279BC0BE0CF7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DA4F53CC7AA12020C7ADAAC /* Pods-FitBuds.debug.xcconfig */,
+				63C21110BC749E177BD5DA65 /* Pods-FitBuds.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F43F1F57222A7BAE00FBF896 = {
+			isa = PBXGroup;
+			children = (
+				F43F1F62222A7BAE00FBF896 /* FitBuds */,
+				F43F1F61222A7BAE00FBF896 /* Products */,
+				2AED41357A5279BC0BE0CF7E /* Pods */,
+				29BB9E25A6FE08D8965791BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F43F1F61222A7BAE00FBF896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F43F1F60222A7BAE00FBF896 /* FitBuds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F43F1F62222A7BAE00FBF896 /* FitBuds */ = {
+			isa = PBXGroup;
+			children = (
+				F43F1F78222A8A0000FBF896 /* pivot_model_v1.mlmodel */,
+				F4C1C5C1222B18B200C876A3 /* narrow_model.mlmodel */,
+				F43F1F63222A7BAF00FBF896 /* AppDelegate.swift */,
+				F43F1F65222A7BAF00FBF896 /* ViewController.swift */,
+				F43F1F67222A7BAF00FBF896 /* Main.storyboard */,
+				F43F1F75222A81DF00FBF896 /* caduceus.png */,
+				F43F1F6A222A7BB100FBF896 /* Assets.xcassets */,
+				F43F1F6C222A7BB100FBF896 /* LaunchScreen.storyboard */,
+				F43F1F6F222A7BB100FBF896 /* Info.plist */,
+				F43F1F7A222ACA9C00FBF896 /* PivotViewController.swift */,
+				F4C1C5BF222B152600C876A3 /* NarrowViewController.swift */,
+			);
+			path = FitBuds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F43F1F5F222A7BAE00FBF896 /* FitBuds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43F1F72222A7BB100FBF896 /* Build configuration list for PBXNativeTarget "FitBuds" */;
+			buildPhases = (
+				B75415A3E95884A1937C66AB /* [CP] Check Pods Manifest.lock */,
+				F43F1F5C222A7BAE00FBF896 /* Sources */,
+				F43F1F5D222A7BAE00FBF896 /* Frameworks */,
+				F43F1F5E222A7BAE00FBF896 /* Resources */,
+				56634E303C1175B206B6E7B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitBuds;
+			productName = FitBuds;
+			productReference = F43F1F60222A7BAE00FBF896 /* FitBuds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F43F1F58222A7BAE00FBF896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.FitBuds;
+				TargetAttributes = {
+					F43F1F5F222A7BAE00FBF896 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F43F1F5B222A7BAE00FBF896 /* Build configuration list for PBXProject "FitBuds" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F43F1F57222A7BAE00FBF896;
+			productRefGroup = F43F1F61222A7BAE00FBF896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F43F1F5F222A7BAE00FBF896 /* FitBuds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F43F1F5E222A7BAE00FBF896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43F1F76222A81DF00FBF896 /* caduceus.png in Resources */,
+				F43F1F6E222A7BB100FBF896 /* LaunchScreen.storyboard in Resources */,
+				F43F1F6B222A7BB100FBF896 /* Assets.xcassets in Resources */,
+				F43F1F69222A7BAF00FBF896 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56634E303C1175B206B6E7B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitBuds/Pods-FitBuds-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FitBuds/Pods-FitBuds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B75415A3E95884A1937C66AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitBuds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F43F1F5C222A7BAE00FBF896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43F1F66222A7BAF00FBF896 /* ViewController.swift in Sources */,
+				F4C1C5C0222B152600C876A3 /* NarrowViewController.swift in Sources */,
+				F43F1F7B222ACA9C00FBF896 /* PivotViewController.swift in Sources */,
+				F4C1C5C2222B18B200C876A3 /* narrow_model.mlmodel in Sources */,
+				F43F1F64222A7BAF00FBF896 /* AppDelegate.swift in Sources */,
+				F43F1F79222A8A0000FBF896 /* pivot_model_v1.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F43F1F67222A7BAF00FBF896 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F43F1F68222A7BAF00FBF896 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F43F1F6C222A7BB100FBF896 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F43F1F6D222A7BB100FBF896 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F43F1F70222A7BB100FBF896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F43F1F71222A7BB100FBF896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F43F1F73222A7BB100FBF896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA4F53CC7AA12020C7ADAAC /* Pods-FitBuds.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GVQWT4S7R;
+				INFOPLIST_FILE = FitBuds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FitBuds.FitBuds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F43F1F74222A7BB100FBF896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63C21110BC749E177BD5DA65 /* Pods-FitBuds.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GVQWT4S7R;
+				INFOPLIST_FILE = FitBuds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FitBuds.FitBuds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F43F1F5B222A7BAE00FBF896 /* Build configuration list for PBXProject "FitBuds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43F1F70222A7BB100FBF896 /* Debug */,
+				F43F1F71222A7BB100FBF896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43F1F72222A7BB100FBF896 /* Build configuration list for PBXNativeTarget "FitBuds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43F1F73222A7BB100FBF896 /* Debug */,
+				F43F1F74222A7BB100FBF896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F43F1F58222A7BAE00FBF896 /* Project object */;
+}
