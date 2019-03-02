@@ -13,10 +13,13 @@ if(button){
         if (val === val2){
             
             console.log('Password Confirm')
+            window.location = "home.html";
         }
         else 
             {
-                console.log('Passwords do not match')
+                console.log('made it');
+                document.getElementById("passwordError").innerHTML = "Passwords do not match.";
+                
             }
         
 });
