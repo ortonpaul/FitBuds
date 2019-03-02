@@ -68,3 +68,12 @@ h2 {
 .resources {
     text-align: center;
 }
+
+.registerme li {
+    
+    list-style-type: none;
+}
+.logmein li {
+    
+    list-style-type: none;
+}
