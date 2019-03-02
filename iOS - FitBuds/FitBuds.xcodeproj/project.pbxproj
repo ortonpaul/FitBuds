@@ -13,11 +13,11 @@
 		F43F1F69222A7BAF00FBF896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43F1F67222A7BAF00FBF896 /* Main.storyboard */; };
 		F43F1F6B222A7BB100FBF896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43F1F6A222A7BB100FBF896 /* Assets.xcassets */; };
 		F43F1F6E222A7BB100FBF896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43F1F6C222A7BB100FBF896 /* LaunchScreen.storyboard */; };
-		F43F1F76222A81DF00FBF896 /* caduceus.png in Resources */ = {isa = PBXBuildFile; fileRef = F43F1F75222A81DF00FBF896 /* caduceus.png */; };
 		F43F1F79222A8A0000FBF896 /* pivot_model_v1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F43F1F78222A8A0000FBF896 /* pivot_model_v1.mlmodel */; };
 		F43F1F7B222ACA9C00FBF896 /* PivotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F1F7A222ACA9C00FBF896 /* PivotViewController.swift */; };
 		F4C1C5C0222B152600C876A3 /* NarrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1C5BF222B152600C876A3 /* NarrowViewController.swift */; };
 		F4C1C5C2222B18B200C876A3 /* narrow_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F4C1C5C1222B18B200C876A3 /* narrow_model.mlmodel */; };
+		F4E5A3F3222B428B00F23435 /* FitBudsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F4E5A3F2222B428B00F23435 /* FitBudsLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +31,11 @@
 		F43F1F6A222A7BB100FBF896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F43F1F6D222A7BB100FBF896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F43F1F6F222A7BB100FBF896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F43F1F75222A81DF00FBF896 /* caduceus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caduceus.png; sourceTree = "<group>"; };
 		F43F1F78222A8A0000FBF896 /* pivot_model_v1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = pivot_model_v1.mlmodel; sourceTree = "<group>"; };
 		F43F1F7A222ACA9C00FBF896 /* PivotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PivotViewController.swift; sourceTree = "<group>"; };
 		F4C1C5BF222B152600C876A3 /* NarrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrowViewController.swift; sourceTree = "<group>"; };
 		F4C1C5C1222B18B200C876A3 /* narrow_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = narrow_model.mlmodel; sourceTree = "<group>"; };
+		F4E5A3F2222B428B00F23435 /* FitBudsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FitBudsLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +88,12 @@
 		F43F1F62222A7BAE00FBF896 /* FitBuds */ = {
 			isa = PBXGroup;
 			children = (
+				F4E5A3F2222B428B00F23435 /* FitBudsLogo.png */,
 				F43F1F78222A8A0000FBF896 /* pivot_model_v1.mlmodel */,
 				F4C1C5C1222B18B200C876A3 /* narrow_model.mlmodel */,
 				F43F1F63222A7BAF00FBF896 /* AppDelegate.swift */,
 				F43F1F65222A7BAF00FBF896 /* ViewController.swift */,
 				F43F1F67222A7BAF00FBF896 /* Main.storyboard */,
-				F43F1F75222A81DF00FBF896 /* caduceus.png */,
 				F43F1F6A222A7BB100FBF896 /* Assets.xcassets */,
 				F43F1F6C222A7BB100FBF896 /* LaunchScreen.storyboard */,
 				F43F1F6F222A7BB100FBF896 /* Info.plist */,
@@ -163,9 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F43F1F76222A81DF00FBF896 /* caduceus.png in Resources */,
 				F43F1F6E222A7BB100FBF896 /* LaunchScreen.storyboard in Resources */,
 				F43F1F6B222A7BB100FBF896 /* Assets.xcassets in Resources */,
+				F4E5A3F3222B428B00F23435 /* FitBudsLogo.png in Resources */,
 				F43F1F69222A7BAF00FBF896 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

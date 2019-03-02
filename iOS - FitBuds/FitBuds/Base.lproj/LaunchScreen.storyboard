@@ -18,24 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="caduceus.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Q4-oi-Rsu">
-                                <rect key="frame" x="67" y="0.0" width="240" height="553"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FitBudsLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Q4-oi-Rsu">
+                                <rect key="frame" x="46" y="107" width="282" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FitBuds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXk-IX-zTb">
-                                <rect key="frame" x="96" y="465" width="183" height="106"/>
-                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.68627450980000004" green="0.80392156859999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="YXk-IX-zTb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="445" id="8Z3-mx-7yw"/>
-                            <constraint firstItem="YXk-IX-zTb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="K0S-Jj-k1w"/>
-                            <constraint firstItem="YXk-IX-zTb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lWW-e7-3qc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YXk-IX-zTb" secondAttribute="bottom" constant="96" id="sf8-aD-mka"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -45,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="caduceus.png" width="1026" height="1280"/>
+        <image name="FitBudsLogo.png" width="500" height="500"/>
     </resources>
 </document>
