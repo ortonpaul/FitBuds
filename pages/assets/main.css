@@ -153,15 +153,15 @@ h4 {
 }
 
 .button {
-  font: bold 36px;
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 20px 60px 20px 60px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+    font: bold 36px;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 20px 60px 20px 60px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
 }
 
 .resources img {
@@ -219,15 +219,12 @@ h4 {
 }
 
 .registerme li {
-
     list-style-type: none;
 }
 .logmein li {
-
     list-style-type: none;
 }
 
 a:active {
     box-shadow: 0.25px 0.5px #bebebe inset;
-
 }
