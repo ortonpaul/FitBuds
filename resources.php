@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Diagnostics</title>
+        <title>Resources</title>
         <link rel="stylesheet" href="pages/assets/main.css">
         <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
     </head>
 
-    <?php
+<?php
   require 'setup.php';
   if (empty($_SESSION['usernamev3'])) {
     header('Location: login.php');
@@ -20,29 +20,27 @@
             <a href="member.php"><img src="pages/assets/home.png" alt="home"></a>
         </div>
         <ul class="navbar">
-            <li><a href="diagnostics.php" id="selected">Diagnostics</a></li>
+            <li><a href="diagnostics.php">Diagnostics</a></li>
             <li><a href="past-results.php">Past Results</a></li>
             <li><a href="my-profile.php">My Profile</a></li>
-            <li><a href="resources.php">Resources</a></li>
+            <li><a href="resources.php" id="selected">Resources</a></li>
         </ul>
+        <div>
         <div class="callout">
-            <ul id="brain">
-            <li>New Cognitive Test <img src="pages/assets/info.png"></li>
-            </ul>
-            <ul id="eye">
-            <li>New Sensory Test <img src="pages/assets/info.png"></li>
-            </ul>
-            <ul id="heart">
-            <li>New Vitals Check-In <img src="pages/assets/info.png"></li>
-            </ul>
-            <ul id="weight">
-            <li>New Strength Check-In <img src="pages/assets/info.png"></li>
-            </ul>
-            <ul id="apple">
-            <li>New Nurtition Check-In <img src="pages/assets/info.png"></li>
-            </ul>
+            <h2>Resources Near Me</h2>
+            <table class="resources">
+                <thead>
+                    <th><img src="pages/assets/weight.png"></th>
+                    <th><img src="pages/assets/stethoscope.png"></th>
+                    <th><img src="pages/assets/people.png"></th>
+                </thead>
+                <tr>
+                    <td>Fitness</td>
+                    <td>Care</td>
+                    <td>Support</td>
+                </tr>
+            </table>
         </div>';
 ?>
-
     </body>
 </html>

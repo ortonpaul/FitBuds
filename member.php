@@ -17,13 +17,13 @@
 
 	echo '	<body>
 			<div class="homeIcon" id="selected">
-					<a href="home.html"><img src="pages/assets/home.png" alt="home" ></a>
+					<a href="member.php"><img src="pages/assets/home.png" alt="home" ></a>
 			</div>
 			<ul class="navbar">
-					<li><a href="diagnostics.html">Diagnostics</a></li>
-					<li><a href="past-results.html">Past Results</a></li>
-					<li><a href="my-profile.html">My Profile</a></li>
-					<li><a href="resources.html">Resources</a></li>
+					<li><a href="diagnostics.php">Diagnostics</a></li>
+					<li><a href="past-results.php">Past Results</a></li>
+					<li><a href="my-profile.php">My Profile</a></li>
+					<li><a href="resources.php">Resources</a></li>
 			</ul>
 			<div>
 					<h1 style="padding-top: 100px">Welcome back, {$username}!</h1>
