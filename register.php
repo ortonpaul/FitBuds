@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>FitBuds Login</title>
+        <title>FitBuds Registration</title>
         <meta name="description" content="The register page of FitBuds">
         <link rel="stylesheet" href="pages/assets/main.css">
     </head>

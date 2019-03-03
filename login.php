@@ -55,7 +55,7 @@
     echo '		<br />
     		<br />
     		<div align = "center">
-    		<h1> Welcome back to Fitbuds! Please log in.</h1>
+    		<h1> Welcome back to FitBuds! Please log in.</h1>
     		<section class = "logmein">
 
     		<form name = "login" action = "login.php" method = "post">

@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>FitBud Welcome</title>
-        <meta name="description" content="The login/register page of FitBud.">
+        <title>FitBuds Welcome</title>
+        <meta name="description" content="The login/register page of FitBuds.">
         <link rel="stylesheet" href="pages/assets/main.css">
     </head>
     <body>
@@ -47,7 +47,7 @@
 
 ?>
         <div align = "center">
-        <h1> Welcome to FitBud! </h1>
+        <h1> Welcome to FitBuds! </h1>
         <h3> Check in and check up </h3>
         <a href = "login.php" class = "button"> Log In </a>
         <a href = "register.php" class = "button"> Register </a>
