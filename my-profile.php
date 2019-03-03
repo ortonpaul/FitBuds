@@ -38,21 +38,18 @@
         </ul>
         <div>
         <div class="callout">
-            <div class="column">
+            <div class="column" style="cursor:pointer;">
                 <ul id="brain">
-                    <li>Cognitive Health</li>
-                </ul>
-                <ul id="eye">
-                    <li>Sensory Health</li>
+                    <li onclick="location.href = \'past-results.php\';">Cognitive Health</li>
                 </ul>
                 <ul id="heart">
-                    <li>Vital Information</li>
+                    <li onclick="location.href = \'past-results.php\';">Vital Information</li>
                 </ul>
                 <ul id="weight">
-                    <li>Physical Strength</li>
+                    <li onclick="location.href = \'past-results.php\';">Physical Strength</li>
                 </ul>
                 <ul id="apple">
-                    <li>Nutritional Data</li>
+                    <li onclick="location.href = \'past-results.php\';">Nutritional Data</li>
                 </ul>
             </div>
             <div class="column" id="profile">

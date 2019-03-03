@@ -4,6 +4,22 @@
         <title>Past Results</title>
         <link rel="stylesheet" href="pages/assets/main.css">
         <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+        <script>
+        function deleteItem(user, timestamp) {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              var element = document.getElementById(timestamp);
+              element.parentNode.removeChild(element);
+            }
+          };
+          xhttp.open("GET", "delete.php?email=" + user + "&timestamp=" + timestamp, true);
+          xhttp.send();
+        }
+        function openItem(user, timestamp) {
+          window.open("view.php?email=" + user + "&timestamp=" + timestamp, '_blank');
+        }
+        </script>
     </head>
 
 <?php
@@ -40,108 +56,19 @@
         <div class="callout">
             <table class="past">
               <tr>
-                <th></th>
                 <th>Date</th>
-                <th>Shared</th>
                 <th>Type</th>
                 <th>View</th>
-                <th>Download</th>
-                <th>Share</th>
+                <th>Delete</th>
               </tr>';
-              $counter = 1;
-              foreach ($resultArray as $key => $value) {
-                echo '<tr>
-                  <td>'.$counter.'.</td>
+              foreach (array_reverse($resultArray, TRUE) as $key => $value) {
+                echo '<tr id="'.$key.'">
                   <td>'.date('n/j/y g:ia', $key).'</td>
-                  <td>TBD</td>
                   <td>'.$value["type"].'</td>
-                  <td><img src="pages/assets/eye.png"></td>
-                  <td><img src="pages/assets/download.png"></td>
-                  <td><img src="pages/assets/share.png"></td>
+                  <td><img onclick="openItem(\''.$username.'\','.$key.');" src="pages/assets/eye.png"></td>
+                  <td><img onclick="deleteItem(\''.$username.'\','.$key.');" src="pages/assets/trash.png"></td>
                 </tr>';
-                $counter = $counter + 1;
               }
-              // <tr>
-              //   <td>1.</td>
-              //   <td>6/4/2018</td>
-              //   <td>Yes</td>
-              //   <td>Sensory</td>
-              //   <td><img src="pages/assets/eye.png"></td>
-              //   <td><img src="pages/assets/download.png"></td>
-              //   <td><img src="pages/assets/share.png"></td>
-              // </tr>
-              //   <tr>
-              //   <td>2.</td>
-              //   <td>7/15/2018</td>
-              //   <td>Yes</td>
-              //   <td>Cognitive</td>
-              //   <td><img src="pages/assets/eye.png"></td>
-              //   <td><img src="pages/assets/download.png"></td>
-              //   <td><img src="pages/assets/share.png"></td>
-              // </tr>
-              //   <tr>
-              //   <td>3.</td>
-              //   <td>8/1/2018</td>
-              //   <td>No</td>
-              //   <td>Vital</td>
-              //   <td><img src="pages/assets/eye.png"></td>
-              //   <td><img src="pages/assets/download.png"></td>
-              //   <td><img src="pages/assets/share.png"></td>
-              // </tr>
-              //   <tr>
-              //   <td>4.</td>
-              //   <td>8/9/2018</td>
-              //   <td>Yes</td>
-              //   <td>Nutritional</td>
-              //   <td><img src="pages/assets/eye.png"></td>
-              //   <td><img src="pages/assets/download.png"></td>
-              //   <td><img src="pages/assets/share.png"></td>
-              // </tr>
-              //   <tr>
-              //   <td>5.</td>
-              //   <td>10/22/2018</td>
-              //   <td>No</td>
-              //   <td>Physical</td>
-              //   <td><img src="pages/assets/eye.png"></td>
-              //   <td><img src="pages/assets/download.png"></td>
-              //   <td><img src="pages/assets/share.png"></td>
-              // </tr>
-              //   <tr>
-              //   <td>6.</td>
-              //   <td>11/13/2018</td>
-              //   <td>No</td>
-              //   <td>Cognitive</td>
-              //   <td><img src="pages/assets/eye.png"></td>
-              //   <td><img src="pages/assets/download.png"></td>
-              //   <td><img src="pages/assets/share.png"></td>
-              // </tr>
-              //   <tr>
-              //   <td>7.</td>
-              //   <td>11/27/2018</td>
-              //   <td>No</td>
-              //   <td>Cognitive</td>
-              //   <td><img src="pages/assets/eye.png"></td>
-              //   <td><img src="pages/assets/download.png"></td>
-              //   <td><img src="pages/assets/share.png"></td>
-              // </tr>
-              //   <tr>
-              //   <td>8.</td>
-              //   <td>12/15/2018</td>
-              //   <td>Yes</td>
-              //   <td>Vital</td>
-              //   <td><img src="pages/assets/eye.png"></td>
-              //   <td><img src="pages/assets/download.png"></td>
-              //   <td><img src="pages/assets/share.png"></td>
-              // </tr>
-              //   <tr>
-              //   <td>9.</td>
-              //   <td>12/19/2018</td>
-              //   <td>No</td>
-              //   <td>Sensory</td>
-              //   <td><img src="pages/assets/eye.png"></td>
-              //   <td><img src="pages/assets/download.png"></td>
-              //   <td><img src="pages/assets/share.png"></td>
-              // </tr>
               echo '
             </table>
         </div>';

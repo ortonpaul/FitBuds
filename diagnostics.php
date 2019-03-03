@@ -32,9 +32,6 @@
               <a href="cognitivequiz1.php" class="diagButton">Quiz 1</a>
               <a href="cognitivequiz2.php" class="diagButton">Quiz 2</a></li>
             </ul>
-            <ul id="eye">
-            <li>New Sensory Test <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Assess your sensory capabilities</span></div></li>
-            </ul>
             <ul id="heart">
             <li>New Vitals Check-In <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Log your vital data points</span></div></li>
             </ul>

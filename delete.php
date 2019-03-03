@@ -1,8 +1,16 @@
 <?php
 require 'setup.php';
-if(isset($_GET["email"])) {
+if (empty($_SESSION['usernamev3'])) {
+  header('Location: login.php');
+  exit("You are not logged in. Redirecting..."); //Kicks off and automatically closes MySQL connection
+}
+$username = htmlentities($_SESSION['usernamev3']);
+if(isset($_GET["email"]) and isset($_GET["timestamp"])) {
 				$email = htmlspecialchars($_GET["email"]);
-				$entityBody = json_decode(file_get_contents('php://input'));
+        if ($email != $username) {
+          exit("You don't have permission for that!");
+        }
+				$timestamp = htmlspecialchars($_GET["timestamp"]);
 				$resultArray = [];
 				$checkUser =  mysqli_prepare($databaseSQL, "SELECT Results FROM users WHERE Email=?;");
 				mysqli_stmt_bind_param($checkUser, 's', $email);
@@ -12,9 +20,7 @@ if(isset($_GET["email"])) {
 			      $resultArray = unserialize($row[0]);
 			    }
 				}
-				$score = ($entityBody->narrow + $entityBody->backwards + $entityBody->pivot) * 6 / 3;
-				$resultAppend = ["type" => "Fitness", "score" => $score];
-				$resultArray[time()] = $resultAppend;
+				unset($resultArray[$timestamp]);
 				$resultArraySerial = serialize($resultArray);
 				//$data = json_decode($json);
         $updateResults =  mysqli_prepare($databaseSQL, "UPDATE users SET Results=? WHERE Email=?");

@@ -30,7 +30,7 @@ if(isset($_POST["cognitivequiz1"])) {
       $resultArray = unserialize($row[0]);
     }
   }
-  $resultAppend = ["type" => "cognitivequiz1", "score" => $sum];
+  $resultAppend = ["type" => "Cognitive Quiz 1", "score" => $sum];
   $resultArray[time()] = $resultAppend;
   $resultArraySerial = serialize($resultArray);
   //$data = json_decode($json);

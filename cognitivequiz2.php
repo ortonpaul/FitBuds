@@ -30,7 +30,7 @@
         $resultArray = unserialize($row[0]);
       }
     }
-    $resultAppend = ["type" => "cognitivequiz2", "score" => $sum];
+    $resultAppend = ["type" => "Cognitive Quiz 2", "score" => $sum];
     $resultArray[time()] = $resultAppend;
     $resultArraySerial = serialize($resultArray);
     //$data = json_decode($json);
