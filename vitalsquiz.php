@@ -75,17 +75,17 @@
         <form name = "vitalsquiz" action = "vitalsquiz.php" method = "post" style="padding-left: 40px;">
 
         1. Do you have trouble breathing? <br>
-            <input type = "radio" value = "yes" name = "q1"> Yes <br>
-            <input type = "radio" value = "no" name = "q1"> No <br>
+            <input type = "radio" value = "0" name = "q1"> Yes <br>
+            <input type = "radio" value = "3" name = "q1"> No <br>
             <br>
         2. What is your normal blood pressure range? <br>
-           <input type = "radio" value = "low" name = "q2"> Low <br>
-            <input type = "radio" value = "ideal" name = "q2"> Ideal <br>
-            <input type = "radio" value = "high" name = "q2"> High <br>
+           <input type = "radio" value = "1" name = "q2"> Low <br>
+            <input type = "radio" value = "4" name = "q2"> Ideal <br>
+            <input type = "radio" value = "0" name = "q2"> High <br>
         <br>
         3. Do you have heart troubles? <br>
-           <input type = "radio" value = "yes" name = "q3"> Yes <br>
-            <input type = "radio" value = "no" name = "q3"> No <br>
+           <input type = "radio" value = "0" name = "q3"> Yes <br>
+            <input type = "radio" value = "5" name = "q3"> No <br>
         <br>
             <input type = "submit" name="vitalsquiz" value = "Submit">
 
