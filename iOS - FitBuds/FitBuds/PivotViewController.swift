@@ -11,7 +11,6 @@ import UIKit
 import AVFoundation
 import CoreMotion
 import CoreML
-import Alamofire
 
 class PivotViewController : UIViewController {
     
@@ -72,7 +71,7 @@ class PivotViewController : UIViewController {
                         }
                         print(output.classLabel)
                         ViewController.results.updateValue(output.classLabel, forKey: "pivot")
-                        Alamofire.request("http://10.106.93.213:8888/push.php?email=" + ViewController.email, method: .post, parameters: ViewController.results, encoding: JSONEncoding.default)
+//                        Alamofire.request("http://10.106.93.213:8888/push.php?email=" + ViewController.email, method: .post, parameters: ViewController.results, encoding: JSONEncoding.default)
                                             self.performSegue(withIdentifier: "toNarrowTest", sender: self)
                     }
                     self.testTime = self.testTime! - 1

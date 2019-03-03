@@ -11,7 +11,6 @@ import UIKit
 import AVFoundation
 import CoreMotion
 import CoreML
-import Alamofire
 
 class NarrowViewController : UIViewController {
     
@@ -68,7 +67,7 @@ class NarrowViewController : UIViewController {
                         }
                         print(output.classLabel)
                         ViewController.results.updateValue(output.classLabel, forKey: "narrow")
-                        Alamofire.request("http://10.106.93.213:8888/push.php?email=" + ViewController.email, method: .post, parameters: ViewController.results, encoding: JSONEncoding.default)
+//                        Alamofire.request("http://10.106.93.213:8888/push.php?email=" + ViewController.email, method: .post, parameters: ViewController.results, encoding: JSONEncoding.default)
                         self.performSegue(withIdentifier: "goToBackwards", sender: self)
                     }
                     self.testTime = self.testTime! - 1
