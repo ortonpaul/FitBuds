@@ -18,6 +18,8 @@
 		F4C1C5C0222B152600C876A3 /* NarrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1C5BF222B152600C876A3 /* NarrowViewController.swift */; };
 		F4C1C5C2222B18B200C876A3 /* narrow_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F4C1C5C1222B18B200C876A3 /* narrow_model.mlmodel */; };
 		F4E5A3F3222B428B00F23435 /* FitBudsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F4E5A3F2222B428B00F23435 /* FitBudsLogo.png */; };
+		F4E5A3F5222B798A00F23435 /* backwards_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F4E5A3F4222B798A00F23435 /* backwards_model.mlmodel */; };
+		F4E5A3F7222B7A5700F23435 /* BackwardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5A3F6222B7A5700F23435 /* BackwardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F4C1C5BF222B152600C876A3 /* NarrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrowViewController.swift; sourceTree = "<group>"; };
 		F4C1C5C1222B18B200C876A3 /* narrow_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = narrow_model.mlmodel; sourceTree = "<group>"; };
 		F4E5A3F2222B428B00F23435 /* FitBudsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FitBudsLogo.png; sourceTree = "<group>"; };
+		F4E5A3F4222B798A00F23435 /* backwards_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = backwards_model.mlmodel; path = "../../scikit-learn generation/backwards_model.mlmodel"; sourceTree = "<group>"; };
+		F4E5A3F6222B7A5700F23435 /* BackwardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackwardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			children = (
 				F4E5A3F2222B428B00F23435 /* FitBudsLogo.png */,
 				F43F1F78222A8A0000FBF896 /* pivot_model_v1.mlmodel */,
+				F4E5A3F4222B798A00F23435 /* backwards_model.mlmodel */,
 				F4C1C5C1222B18B200C876A3 /* narrow_model.mlmodel */,
 				F43F1F63222A7BAF00FBF896 /* AppDelegate.swift */,
 				F43F1F65222A7BAF00FBF896 /* ViewController.swift */,
@@ -99,6 +104,7 @@
 				F43F1F6F222A7BB100FBF896 /* Info.plist */,
 				F43F1F7A222ACA9C00FBF896 /* PivotViewController.swift */,
 				F4C1C5BF222B152600C876A3 /* NarrowViewController.swift */,
+				F4E5A3F6222B7A5700F23435 /* BackwardsViewController.swift */,
 			);
 			path = FitBuds;
 			sourceTree = "<group>";
@@ -229,10 +235,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F43F1F66222A7BAF00FBF896 /* ViewController.swift in Sources */,
+				F4E5A3F7222B7A5700F23435 /* BackwardsViewController.swift in Sources */,
 				F4C1C5C0222B152600C876A3 /* NarrowViewController.swift in Sources */,
 				F43F1F7B222ACA9C00FBF896 /* PivotViewController.swift in Sources */,
 				F4C1C5C2222B18B200C876A3 /* narrow_model.mlmodel in Sources */,
 				F43F1F64222A7BAF00FBF896 /* AppDelegate.swift in Sources */,
+				F4E5A3F5222B798A00F23435 /* backwards_model.mlmodel in Sources */,
 				F43F1F79222A8A0000FBF896 /* pivot_model_v1.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

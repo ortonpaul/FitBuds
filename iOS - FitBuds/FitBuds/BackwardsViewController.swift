@@ -1,5 +1,5 @@
 //
-//  NarrowViewController.swift
+//  BackwardsViewController.swift
 //  FitBuds
 //
 //  Created by David Frankel on 3/2/19.
@@ -8,24 +8,24 @@
 
 import Foundation
 import UIKit
-import AVFoundation
-import CoreMotion
 import CoreML
+import CoreMotion
+import AVFoundation
 import Alamofire
+import SVProgressHUD
 
-class NarrowViewController : UIViewController {
-    
-    @IBOutlet weak var viewName: UILabel!
+class BackwardsViewController : UIViewController {
     var testTime : Int? = 3 * 60
     let motion = CMMotionManager()
     var timer : Timer?;
     var data = [Double]()
+    @IBOutlet weak var viewName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-        let utterance = AVSpeechUtterance(string: "Test done. Now begining the Narrow Test. " + viewName.text!)
+        let utterance = AVSpeechUtterance(string: "Test done. Now begining the Backwards Test. " + viewName.text!)
         let synth = AVSpeechSynthesizer()
         synth.speak(utterance)
     }
@@ -53,8 +53,13 @@ class NarrowViewController : UIViewController {
                     }
                     if self.data.count == 543 {
                         timer.invalidate()
+                        let utterance = AVSpeechUtterance(string: "Test done")
+                        let synth = AVSpeechSynthesizer()
+                        synth.speak(utterance)
                         
-                        let model = backwards_model()
+                        
+                        
+                        let model = narrow_model()
                         
                         guard let mlMultiArray = try? MLMultiArray(shape:[543], dataType:MLMultiArrayDataType.double) else {
                             fatalError("Unexpected runtime error. MLMultiArray")
@@ -67,9 +72,17 @@ class NarrowViewController : UIViewController {
                             fatalError("Unexpected runtime error.")
                         }
                         print(output.classLabel)
-                        ViewController.results.updateValue(output.classLabel, forKey: "narrow")
+                        ViewController.results.updateValue(output.classLabel, forKey: "backwards")
                         Alamofire.request("http://10.106.93.213:8888/push.php?email=" + ViewController.email, method: .post, parameters: ViewController.results, encoding: JSONEncoding.default)
-                        self.performSegue(withIdentifier: "goToBackwards", sender: self)
+                        let messsageS = "All tests done. Check your info on the web app using the email " + ViewController.email + "!"
+                        SVProgressHUD.setMinimumDismissTimeInterval(TimeInterval(30))
+                        SVProgressHUD.showSuccess(withStatus: messsageS)
+                        
+                        let utterance2 = AVSpeechUtterance(string: messsageS)
+                        
+                        let synth2 = AVSpeechSynthesizer()
+                        synth2.speak(utterance2)
+                    AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
                     }
                     self.testTime = self.testTime! - 1
                     
@@ -80,5 +93,4 @@ class NarrowViewController : UIViewController {
             
         }
     }
-    
 }
