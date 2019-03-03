@@ -30,17 +30,27 @@
             <h2>Resources Near Me</h2>
             <table class="resources">
                 <thead>
-                    <th><img src="pages/assets/weight.png"></th>
-                    <th><img src="pages/assets/stethoscope.png"></th>
-                    <th><img src="pages/assets/people.png"></th>
+                    <th><a href="https://www.google.com/maps?q=gym" target="_blank"><img src="pages/assets/weight.png"></a></th>
+                    <th><a href="https://www.google.com/maps?q=hospital" target="_blank"><img src="pages/assets/stethoscope.png"></a></th>
+                    <th><a href="https://www.google.com/maps?q=senior+services" target="_blank"><img src="pages/assets/people.png"></a></th>
                 </thead>
                 <tr>
                     <td>Fitness</td>
                     <td>Care</td>
                     <td>Support</td>
                 </tr>
-            </table>
-        </div>';
+            </table>';
+            if(isset($_GET['resource'])) {
+              echo '<h3>Your Location:</h3>';
+              if($_GET['resource'] == "fitness") {
+              } elseif ($_GET['resource'] == "care") {
+
+              } elseif ($_GET['resource'] == "support") {
+
+              }
+            }
+            echo '</div>';
 ?>
     </body>
+
 </html>

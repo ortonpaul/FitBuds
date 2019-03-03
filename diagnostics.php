@@ -27,7 +27,7 @@
         </ul>
         <div class="callout">
             <ul id="brain">
-            <li>New Cognitive Test <img src="pages/assets/info.png"></li>
+            <li>New Cognitive Test <img src="pages/assets/info.png"><a href="pages/cognitivequiz1.html" style="color:black; margin: 0px 20px; padding: 10px 10px 10px 0px; background-color: lightgray; text-decoration: none;"> Quiz 1</a><a href="pages/cognitivequiz2.html" style="color:black; margin: 0px 20px; padding: 10px 10px 10px 0px; background-color: lightgray; text-decoration: none;"> Quiz 2</a></li>
             </ul>
             <ul id="eye">
             <li>New Sensory Test <img src="pages/assets/info.png"></li>

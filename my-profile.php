@@ -13,8 +13,16 @@
     exit("You are not logged in. Redirecting..."); //Kicks off and automatically closes MySQL connection
     }
     $username = htmlentities($_SESSION['usernamev3']);
-    // echo "<p>Welcome to the logged in area, {$username}!</p>";
+    $name = " ";
+    $checkUser = mysqli_prepare($databaseSQL, "SELECT Name FROM users WHERE Email=?;");
+    mysqli_stmt_bind_param($checkUser, 's', $username);
 
+    mysqli_stmt_execute($checkUser);
+    if ($result = mysqli_stmt_get_result($checkUser)) {	// echo "<p>Welcome to the logged in area, {$username}!</p>";
+      if ($row = mysqli_fetch_row($result)) {
+        $name = $row[0];
+      }
+  }
     echo '    <body>
         <div class="homeIcon">
             <a href="member.php"><img src="pages/assets/home.png" alt="home"></a>
@@ -46,7 +54,7 @@
             </div>
             <div class="column" id="profile">
                 <img src="pages/assets/profile.png" style="display: block; margin-left: auto; margin-right: auto; width: 30%">
-                <h3>John Doe</h3>
+                <h3>' . $name . '</h3>
                 <h4>Age 64</h4>
                 <h4>Rolla, MO</h4>
             </div>
