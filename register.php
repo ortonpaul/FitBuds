@@ -22,13 +22,15 @@
 
 		$name = $_POST["username"]; //Grabs name and password entered from POST
 		$password = $_POST["passwrd"];
-
+    $actualname = $_POST["firstandlastname"];
+    $city = $_POST["city"];
+    $state = $_POST["state"];
 		mysqli_stmt_execute($checkUser); //System of prepared execution prevents SQL Injection
 		$result = mysqli_stmt_get_result($checkUser);
 
 		if (!mysqli_num_rows($result)) { //Only creates user if query SELECT returns no rows (so username is not in use)
-			$checkUser =  mysqli_prepare($databaseSQL, "INSERT INTO users (Email, Password) VALUES (?,?)");
-			mysqli_stmt_bind_param($checkUser, 'ss', $name, $password);
+			$checkUser =  mysqli_prepare($databaseSQL, "INSERT INTO users (Email, Password, Name, City, State) VALUES (?,?,?,?,?)");
+			mysqli_stmt_bind_param($checkUser, 'sssss', $name, $password, $actualname, $city, $state);
 
 			$name = $_POST["username"]; //Grabs name and password entered from POST after page redirect from home.html on submit
 			$password = password_hash($_POST["passwrd"], PASSWORD_DEFAULT);
@@ -128,7 +130,7 @@
   				<li> <label for = "city"> City </label>
   				<input type = "city" name = "city" placeholder = "city" >
   				<label for = "state"> State </label>
-  				<select>
+  				<select name="state">
   <option value="">   </option>
   <option value="AL">AL</option>
   <option value="AK">AK</option>

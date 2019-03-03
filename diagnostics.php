@@ -24,6 +24,7 @@
             <li><a href="past-results.php">Past Results</a></li>
             <li><a href="my-profile.php">My Profile</a></li>
             <li><a href="resources.php">Resources</a></li>
+            <li><a href="logout.php">Logout</a></li>
         </ul>
         <div class="callout">
             <ul id="brain">

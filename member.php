@@ -32,12 +32,13 @@
 					<li><a href="past-results.php">Past Results</a></li>
 					<li><a href="my-profile.php">My Profile</a></li>
 					<li><a href="resources.php">Resources</a></li>
+          <li><a href="logout.php">Logout</a></li>
 			</ul>
 			<div>
 					<h1 style="padding-top: 100px">Welcome back, ' . $name . '!</h1>
 					<h3>Click a tab to get started!</h3>
 			</div>';
-	echo '<button onClick="javascript:window.location.href=\'logout.php\'">Logout</button>';
+	// echo '<button style="position: absolute; top: 75px; left: 10000px" onClick="javascript:window.location.href=\'logout.php\'">Logout</button>';
 	mysqli_close($databaseSQL); //Closes socket to MySQL! Important!
 ?>
 
