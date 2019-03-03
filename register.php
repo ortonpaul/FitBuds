@@ -37,9 +37,9 @@
 			$name = $_POST["username"]; //Grabs name and password entered from POST after page redirect from home.html on submit
 			$password = password_hash($_POST["passwrd"], PASSWORD_DEFAULT);
 
-            echo mysqli_stmt_execute($checkUser); //Prevents SQL Injection?
+      mysqli_stmt_execute($checkUser); //Prevents SQL Injection?
 
-			echo " account created with username {$name}.";
+			echo "Account created with username/email {$name}.";
 			echo '<br><button onClick="javascript:window.location.href=\'login.php\'">Take me to login!</button>';
 		} else {
 			echo "Username already in use.";
@@ -72,7 +72,7 @@
   <form name = "register" action = "register.php" method = "post">
 
   		<ul>
-  				<li> <label for = "firstandlastname"> First And Last Name </label>
+  				<li> <label for = "firstandlastname"> Name </label>
   						<input type = "firstandlastname" name = "firstandlastname" > </li>
   				<br />
   				<li> <label for = "city"> City </label>

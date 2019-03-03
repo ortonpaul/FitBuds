@@ -33,7 +33,8 @@
               <a href="cognitivequiz2.php" class="diagButton">Quiz 2</a></li>
             </ul>
             <ul id="heart">
-            <li>New Vitals Check-In <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Log your vital data points</span></div></li>
+            <li>New Vitals Check-In <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Log your vital data points</span></div>
+            <a href="vitalsquiz.php" class="diagButton">Quiz</a></li>
             </ul>
             <ul id="weight">
             <li>New Fitness Check-In <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Analyze your physical health</span></div>
@@ -41,7 +42,9 @@
             </li>
             </ul>
             <ul id="apple">
-            <li>New Nurtition Check-In <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Log your nutritional data</span></div></li>
+            <li>New Nurtition Check-In <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Log your nutritional data</span></div>
+            <a href="nutritionquiz.php" class="diagButton">Quiz</a>
+            </li>
             </ul>
         </div>';
 ?>

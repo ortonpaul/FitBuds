@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cognitive Quiz 2 </title>
+        <title>Cognitive Quiz 2</title>
         <meta name="description" content="One of the cognitive quizzes on FitBuds.">
         <link rel="stylesheet" href="pages/assets/main.css">
     </head>

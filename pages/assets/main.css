@@ -156,6 +156,18 @@ a.diagButton {
     vertical-align: middle;
 }
 
+#analysis li:before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-image: url(analysis.png);
+    background-repeat: no-repeat;
+    margin-right: 35px;
+    vertical-align: middle;
+}
+
 .callout li img {
     height: 15px;
 }
@@ -166,6 +178,8 @@ a.diagButton {
     background-color: #EEEEEE;
     color: #333333;
     padding: 20px 60px 20px 60px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;

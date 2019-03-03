@@ -14,7 +14,7 @@
     }
     $username = htmlentities($_SESSION['usernamev3']);
     $name = " ";
-    $checkUser = mysqli_prepare($databaseSQL, "SELECT Name, City, State FROM users WHERE Email=?;");
+    $checkUser = mysqli_prepare($databaseSQL, "SELECT Name, City, State, Results FROM users WHERE Email=?;");
     mysqli_stmt_bind_param($checkUser, 's', $username);
 
     mysqli_stmt_execute($checkUser);
@@ -23,8 +23,44 @@
         $name = $row[0];
         $city = $row[1];
         $state = $row[2];
+        $resultArray = unserialize($row[3]);
       }
   }
+
+  $minType = "More data needed";
+  if (count($resultArray) > 2) {
+    $minTypeVal = 50;
+    foreach ($resultArray as $value) {
+      if ($minTypeVal > $value["score"]) {
+        $minTypeVal = $value["score"];
+        $minType = $value["type"];
+      }
+    }
+  }
+
+  switch($minType){
+    case "Cognitive Quiz 1":
+        $minType = "Try to do more mental exercises (like Soduku).";
+        break;
+    case "Cognitive Quiz 2":
+        $minType = "Talk to a doctor.";
+        break;
+    case "Nutrition Quiz":
+        $minType = "Try to find a buddy and pledge to improve nutritional choices.";
+        break;
+    case "Vitals Quiz":
+        $minType = "Try swimming to improve cardiovascular health.";
+        break;
+    case "Fitness":
+        $minType = "Try yoga to improve your balance.";
+        break;
+    default:
+        $minType = "Not enough data.";
+        break;
+}
+
+
+
     echo '    <body>
         <div class="homeIcon">
             <a href="member.php"><img src="pages/assets/home.png" alt="home"></a>
@@ -36,7 +72,6 @@
             <li><a href="resources.php">Resources</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
-        <div>
         <div class="callout">
             <div class="column" style="cursor:pointer;">
                 <ul id="brain">
@@ -50,6 +85,10 @@
                 </ul>
                 <ul id="apple">
                     <li onclick="location.href = \'past-results.php\';">Nutritional Data</li>
+                </ul>
+                <ul id="analysis">
+                    <li onclick="location.href = \'resources.php?resource=fitness\';">Smart Recommendation:
+                    <br/><span style="padding-left: 85px; display: block;">'.$minType.'</span></li>
                 </ul>
             </div>
             <div class="column" id="profile">

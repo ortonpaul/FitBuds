@@ -1,4 +1,4 @@
-# Pickhacks 2019 Entry: FitBuds
+# PickHacks 2019 Entry: FitBuds
 ## Inspiration
 We wanted FitBuds to not only be a unique service, but also one that served an overlooked segment of the population: senior citizens. According to the CDC, physically active older adults should incorporate around 2.5 hours of moderate endurance activity into their weeks to preserve physical function and mobility. However, more than 2/3 of adults do not reach this number.
 
@@ -7,9 +7,9 @@ Compounding this problem, most athletics programs overlook the needs of senior c
 With those goals in mind, we decided we wanted to create an easy-to-use and intuitive service that assists the elderly in tracking, managing, and even improving their health. Hence, FitBuds aims to be simple, functionally reliable, and informative.
 
 ## What it does
-FitBuds tracks the “aptitudes” of users through a mobile app and through surveys on the website. The mobile app tracks the movements of an individual and uses the data collected to compute a score for three aptitudes: strength, balance, and flexibility (the major components of physical health). These can indicate the risks of developing conditions. Lifestyle information gathered through the web app also play a part in this evaluation. 
+FitBuds tracks the “aptitudes” of users through a mobile app and through surveys on the website. The mobile app tracks the movements of an individual and uses the data collected to compute a score for three aptitudes: strength, balance, and flexibility (the major components of physical health). These can indicate the risks of developing conditions. Lifestyle information gathered through the web app also play a part in this evaluation.
 
-Machine learning analyzes this data and then recommends the best type of exercise to address deficient areas. The app, however, goes even further and also uses the current location of user to find nearby gyms and senior service centers with active wellness programs for older adults or low-impact exercises like yoga and swimming. Users can then improve their health and track their progress, along with possibly receiving reminder alerts or nutritional tips (another major concern around the health of older adults). 
+Machine learning analyzes this data and then recommends the best type of exercise to address deficient areas. The app, however, goes even further and also uses the current location of user to find nearby gyms and senior service centers with active wellness programs for older adults or low-impact exercises like yoga and swimming. Users can then improve their health and track their progress, along with possibly receiving reminder alerts or nutritional tips (another major concern around the health of older adults).
 
 ## How we built it
 The site is served by an Apache/MySQL host. Using a combination of HTML, CSS, PHP, JavaScript, and MySQL, the web app allows users to create accounts and securely store their health information and personal history. In addition, an iOS app (written in Swift with Cocoapods in Ruby) works in tandem with the site through a RESTful API and QR code login system. As a result, user do not have to remember their passwords in order to securely update their analytics — a critical feature to allow adults with lower digital literacy to still take advantage of the service. The app also implements supervised machine learning through support vector machines with a RDF kernel trained in Python (more detail on the trial and error around the neural networks for the more technically minded folks at the end of this doc).
