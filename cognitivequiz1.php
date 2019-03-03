@@ -39,6 +39,21 @@ if(isset($_POST["cognitivequiz1"])) {
   mysqli_stmt_bind_param($updateResults, 'ss', $resultArraySerial, $username);
 
   mysqli_stmt_execute($updateResults);
+  echo '<body>
+  <div class="homeIcon">
+      <a href="member.php"><img src="pages/assets/home.png" alt="home"></a>
+  </div>
+  <ul class="navbar">
+      <li><a href="diagnostics.php" id="selected">Diagnostics</a></li>
+      <li><a href="past-results.php">Past Results</a></li>
+      <li><a href="my-profile.php">My Profile</a></li>
+      <li><a href="resources.php">Resources</a></li>
+      <li><a href="logout.php">Logout</a></li>
+  </ul>
+  <div class="callout">
+      <h2>Quiz completed.</h2>
+      <h3>Your score is: '.$sum.'</h3>
+      </div>';
 } else {
   echo '    <body>
         <div class="homeIcon">

@@ -1,5 +1,6 @@
 <?php
 	session_start(); //Starts PHP session
+	date_default_timezone_set('America/Chicago');
 
 
 	//Optional error printing code
