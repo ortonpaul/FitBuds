@@ -14,13 +14,15 @@
     }
     $username = htmlentities($_SESSION['usernamev3']);
     $name = " ";
-    $checkUser = mysqli_prepare($databaseSQL, "SELECT Name FROM users WHERE Email=?;");
+    $checkUser = mysqli_prepare($databaseSQL, "SELECT Name, City, State FROM users WHERE Email=?;");
     mysqli_stmt_bind_param($checkUser, 's', $username);
 
     mysqli_stmt_execute($checkUser);
     if ($result = mysqli_stmt_get_result($checkUser)) {	// echo "<p>Welcome to the logged in area, {$username}!</p>";
       if ($row = mysqli_fetch_row($result)) {
         $name = $row[0];
+        $city = $row[1];
+        $state = $row[2];
       }
   }
     echo '    <body>
@@ -56,8 +58,7 @@
             <div class="column" id="profile">
                 <img src="pages/assets/profile.png" style="display: block; margin-left: auto; margin-right: auto; width: 30%">
                 <h3>' . $name . '</h3>
-                <h4>Age 64</h4>
-                <h4>Rolla, MO</h4>
+                <h4>'.$city.', '.$state.'</h4>
             </div>
         </div>';
 ?>

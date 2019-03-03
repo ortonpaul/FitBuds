@@ -28,19 +28,23 @@
         </ul>
         <div class="callout">
             <ul id="brain">
-            <li>New Cognitive Test <img src="pages/assets/info.png"><a href="pages/cognitivequiz1.html" style="color:black; margin: 0px 20px; padding: 10px 10px 10px 0px; background-color: lightgray; text-decoration: none;"> Quiz 1</a><a href="pages/cognitivequiz2.html" style="color:black; margin: 0px 20px; padding: 10px 10px 10px 0px; background-color: lightgray; text-decoration: none;"> Quiz 2</a></li>
+            <li>New Cognitive Test <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Analyze your mental health habits</span></div>
+              <a href="cognitivequiz1.php" class="diagButton">Quiz 1</a>
+              <a href="cognitivequiz2.php" class="diagButton">Quiz 2</a></li>
             </ul>
             <ul id="eye">
-            <li>New Sensory Test <img src="pages/assets/info.png"></li>
+            <li>New Sensory Test <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Assess your sensory capabilities</span></div></li>
             </ul>
             <ul id="heart">
-            <li>New Vitals Check-In <img src="pages/assets/info.png"></li>
+            <li>New Vitals Check-In <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Log your vital data points</span></div></li>
             </ul>
             <ul id="weight">
-            <li>New Strength Check-In <img src="pages/assets/info.png"></li>
+            <li>New Fitness Check-In <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Analyze your physical health</span></div>
+              <a href="https://api.qrserver.com/v1/create-qr-code/?data='.$username.'" onclick="window.open(\'https://api.qrserver.com/v1/create-qr-code/?data='.$username.'\',\'popup\',\'width=600,height=600\'); return false;" target="popup" class="diagButton">iOS Diagnostic App QR Code</a>
+            </li>
             </ul>
             <ul id="apple">
-            <li>New Nurtition Check-In <img src="pages/assets/info.png"></li>
+            <li>New Nurtition Check-In <div class="tooltip"><img src="pages/assets/info.png"><span class="tooltiptext">Log your nutritional data</span></div></li>
             </ul>
         </div>';
 ?>

@@ -27,10 +27,12 @@
     $state = $_POST["state"];
 		mysqli_stmt_execute($checkUser); //System of prepared execution prevents SQL Injection
 		$result = mysqli_stmt_get_result($checkUser);
+    $resultArray = [];
+    $arraySerial = serialize($resultArray);
 
 		if (!mysqli_num_rows($result)) { //Only creates user if query SELECT returns no rows (so username is not in use)
-			$checkUser =  mysqli_prepare($databaseSQL, "INSERT INTO users (Email, Password, Name, City, State) VALUES (?,?,?,?,?)");
-			mysqli_stmt_bind_param($checkUser, 'sssss', $name, $password, $actualname, $city, $state);
+			$checkUser =  mysqli_prepare($databaseSQL, "INSERT INTO users (Email, Password, Name, City, State, Results) VALUES (?,?,?,?,?,?)");
+			mysqli_stmt_bind_param($checkUser, 'ssssss', $name, $password, $actualname, $city, $state, $arraySerial);
 
 			$name = $_POST["username"]; //Grabs name and password entered from POST after page redirect from home.html on submit
 			$password = password_hash($_POST["passwrd"], PASSWORD_DEFAULT);
@@ -72,60 +74,6 @@
   		<ul>
   				<li> <label for = "firstandlastname"> First And Last Name </label>
   						<input type = "firstandlastname" name = "firstandlastname" > </li>
-  				<br />
-  			 <li> <label for = "birthdate"> Birthday </label>
-  <select>
-  <option value = "">       </option>
-  <option value="January">January</option>
-  <option value="Febuary">Febuary</option>
-  <option value="March">March</option>
-  <option value="April">April</option>
-  <option value="May">May</option>
-  <option value="June">June</option>
-  <option value="July">July</option>
-  <option value="August">August</option>
-  <option value="September">September</option>
-  <option value="October">October</option>
-  <option value="November">November</option>
-  <option value="December">December</option>
-  </select>
-
-  <select>
-  <option value=""> </option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
-  <option value="7">7</option>
-  <option value="8">8</option>
-  <option value="9">9</option>
-  <option value="10">10</option>
-  <option value="11">11</option>
-  <option value="12">12</option>
-  <option value="13">13</option>
-  <option value="14">14</option>
-  <option value="15">15</option>
-  <option value="16">16</option>
-  <option value="17">17</option>
-  <option value="18">18</option>
-  <option value="19">19</option>
-  <option value="20">20</option>
-  <option value="21">21</option>
-  <option value="22">22</option>
-  <option value="23">23</option>
-  <option value="24">24</option>
-  <option value="25">25</option>
-  <option value="26">26</option>
-  <option value="27">27</option>
-  <option value="28">28</option>
-  <option value="29">29</option>
-  <option value="30">30</option>
-  <option value="31">31</option>
-  </select>
-
-  					 <input type ="year" name="year" placeholder="year"> </li>
   				<br />
   				<li> <label for = "city"> City </label>
   				<input type = "city" name = "city" placeholder = "city" >
