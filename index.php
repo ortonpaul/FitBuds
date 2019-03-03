@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>FitBud Welcome</title>
         <meta name="description" content="The login/register page of FitBud.">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="pages/assets/main.css">
     </head>
     <body>
-        
+
 <?php
 	//Optional error printing code
 	error_reporting(-1);
@@ -30,7 +30,7 @@
 
 		mysqli_stmt_execute($checkUser); //Prevents SQL Injection?
 		$result = mysqli_stmt_get_result($checkUser);
-		
+
 		if (mysqli_num_rows($result)) {
 			echo "Logged in.";
             header("Location: /home.html");
@@ -40,23 +40,17 @@
 
 		mysqli_stmt_close($checkUser);
 	} else { // Form generation if submit has not been pressed
-		echo '<form action="index.php" method="post">
-			Username: <input type="text" name="username"><br>
-			Password: <input type="password" name="passwrd"><br>
-			<input type="submit" value="Submit" name="submit">
-			</form>';
+
 	}
 
 	mysqli_close($databaseSQL); //Closes socket to MySQL! Important!
 
 ?>
-        <!--
         <div align = "center">
         <h1> Welcome to FitBud! </h1>
         <h3> Check in and check up </h3>
-        <a href = "loginform.html" class = "button"> Log In </a>
-        <a href = "registerform.html" class = "button"> Register </a>
-        </div>-->
+        <a href = "login.php" class = "button"> Log In </a>
+        <a href = "register.php" class = "button"> Register </a>
+        </div>
     </body>
 </html>
-        

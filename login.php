@@ -1,6 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FitBuds Login</title>
+        <meta name="description" content="The login page of FitBuds">
+        <link rel="stylesheet" href="pages/assets/main.css">
+    </head>
+    <body>
+
 <?php
 	require 'setup.php';
-	
+
 	if (isset($_SESSION['usernamev3'])) { //Person is already logged in
 		header('Location: member.php');
 		exit("You are already logged in. Redirecting to member page..."); //Automatically closes MySQL connection and sends to logged in page
@@ -36,12 +47,32 @@
 		<meta name="description" content="Login page!">
 		<meta name="author" content="FitBuds"></head>
 		<body>';
-		echo '<form action="login.php" method="post">
-			Username: <input type="text" name="username" required><br>
-			Password: <input type="password" name="passwrd" required><br>
-			<input type="submit" value="Login" name="login">
-			</form>';
-		echo '<form action="register.php">I don\'t have an account.<input type="submit" value="Take me to registration!" /></form>';
+		// echo '<form action="login.php" method="post">
+		// 	Username: <input type="text" name="username" required><br>
+		// 	Password: <input type="password" name="passwrd" required><br>
+		// 	<input type="submit" value="Login" name="login">
+		// 	</form>';
+    echo '		<br />
+    		<br />
+    		<div align = "center">
+    		<h1> Welcome back to Fitbuds! Please log in.</h1>
+    		<section class = "logmein">
+
+    		<form name = "login" action = "login.php" method = "post">
+
+    		<ul>
+    				<li> <label for = "usermail"> Email </label>
+    						<input type = "email" name = "username" placeholder = "name@example.com" required> </li>
+    				<br />
+    			 <li> <label for = "password"> Password </label>
+    				<input type = "password" name = "passwrd" placeholder = "Password" required> </li>
+    				<br />
+    				<li> <input type="submit" value="Login" name="login"> </li>
+    				</ul>
+    		 </form>
+    		 </section>
+    		</div>';
+		echo '<form action="register.php">I don\'t have an account. <input type="submit" value="Take me to registration!" /></form>';
 	}
 
 	mysqli_close($databaseSQL); //Closes socket to MySQL! Important!
@@ -55,3 +86,6 @@
 		}
 	}
 ?>
+
+	</body>
+</html>
